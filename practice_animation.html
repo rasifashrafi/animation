@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            
+            background: url("./Forest_background-01.png")  0 0 repeat-x, url('./grass.png') bottom repeat-x;
+            height: 100vh;
+            background-size: 900px 100%;
+            animation: background 5s linear infinite; 
+            
+
+        }
+        @keyframes background {
+            form{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -900px 0;
+            }
+        }
+    .animation{
+            position: fixed;
+            top:219px;
+            bottom: 0;
+            left: -806px;
+            right: 0;
+            margin: auto;
+            background: url("./hobbit-style-sprite-sheet-walk-left.png");
+            zoom: 1;
+            width: 198.75px;
+            height: 254px;
+            animation: walk 0.5s steps(4) infinite;
+            
+        }
+        @keyframes walk {
+            form{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -795px 0;
+            }
+        }
+        .animation1{
+            position: fixed;
+            top: 175px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: url("./run.png");
+            width: 128px;
+            height: 163.6666667px;
+            animation: run 0.5s steps(8) infinite;
+            zoom: 1.4;
+
+        }
+        @keyframes run {
+            form{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -1024px 0;
+            }
+        }
+        .animation2{
+            position: fixed;
+            top: 400px;
+            bottom: 0;
+            left: 217px;
+            right: 0;
+            margin: auto;
+            background: url("DogRun.png");
+            width: 184px;
+            height: 100px;
+            animation: rabbit 1s steps(3) infinite;
+        }
+
+        @keyframes rabbit {
+            0%{background-position: 0 0;}
+            33.33%{background-position: -552px 0;}
+
+            33.34%{background-position: 0 -100px;}
+            66.67%{background-position: -552px -100px;}
+
+            66.68%{background-position: 0 -200px;}
+            100%{background-position: -552px -200px;}
+
+
+        } 
+    
+        
+    </style>
+</head>
+<body>
+    <div class="animation"></div>
+    <div class="animation1"></div>
+    <div class="animation2"></div>
+    
+</body>
+
+</html>
